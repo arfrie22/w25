@@ -1,0 +1,21 @@
+[package]
+name = "w25"
+version = "0.6.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "An embedded-hal driver for the W25 series"
+homepage = "https://github.com/tweedegolf/w25"
+repository = "https://github.com/tweedegolf/w25"
+readme = "README.md"
+keywords = ["no_std", "embedded", "flash", "w25"]
+categories = ["no-std::no-alloc", "embedded"]
+
+[dependencies]
+defmt = { version = "1.0", optional = true }
+embedded-hal = "1.0"
+embedded-hal-async = "1.0"
+embedded-storage = "0.3"
+embedded-storage-async = "0.4"
+
+[features]
+defmt = ["dep:defmt"]
