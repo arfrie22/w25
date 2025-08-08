@@ -52,6 +52,7 @@ enum Command {
     EnableReset = 0x66,
     PowerDown = 0xB9,
     ReleasePowerDown = 0xAB,
+    JedecId = 0x9F,
     Reset = 0x99,
 }
 
